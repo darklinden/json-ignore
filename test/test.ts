@@ -15,6 +15,18 @@ class TestSubClass {
     subValue4: string;
 
     subValue5: string;
+
+    testSubFunc0(): string {
+        return this.subValue0;
+    }
+
+    testSubFunc1(v0: string, v1: string): string {
+        return v0 + v1;
+    }
+
+    toString(): string {
+        return this.subValue4;
+    }
 }
 
 class TestClass {
@@ -30,6 +42,10 @@ class TestClass {
 
     @JsonIgnore
     value4: TestSubClass;
+
+    testFunc0(): string {
+        return this.value1;
+    }
 }
 
 const jo = new TestClass();

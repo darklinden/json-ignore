@@ -1,5 +1,4 @@
 const hackJSON = (cls: any, jsonIgnore: string[]) => {
-    console.log(cls, jsonIgnore);
     var result: { [key: string]: any } = {};
 
     for (var k in cls) {
